@@ -1,0 +1,36 @@
+Estimados estudiantes,
+
+
+
+Junto con saludar, les informo las indicaciones para la Evaluación Parcial 3 de la asignatura Programación para la Ciencia de Datos.
+
+El trabajo será grupal y deberá ser presentado los días miércoles 01 de julio y viernes 03 de julio, según la distribución indicada más abajo.
+
+
+
+Cada grupo deberá preparar una solución simple en Python, aplicando los contenidos vistos en clases: manejo de datos, análisis básico, visualizaciones interactivas con Plotly, creación de un mini dashboard y uso de Git/GitHub como evidencia del trabajo realizado.
+
+
+
+La entrega debe considerar lo siguiente:
+
+Un notebook o archivo Python con el desarrollo del análisis.
+Uso de un conjunto de datos en formato CSV, Excel o datos creados por el grupo.
+Limpieza o preparación básica de los datos.
+Al menos tres visualizaciones interactivas con Plotly, por ejemplo: gráfico de barras, gráfico de líneas y gráfico de dispersión.
+Un mini dashboard o una sección ordenada donde se muestren los principales resultados.
+Interpretación de los gráficos, explicando qué información relevante entrega cada visualización.
+Repositorio en GitHub con el proyecto subido, incluyendo evidencia de uso de git add, git commit, git push y, si corresponde, git pull.
+Una presentación breve donde expliquen el problema, los datos utilizados, los gráficos creados, los principales resultados y el trabajo realizado por el grupo.
+
+
+La rúbrica será la siguiente:
+
+Preparación y análisis de datos: 20%
+Visualizaciones interactivas con Plotly: 25%
+Mini dashboard, orden y claridad visual: 20%
+Uso de Git/GitHub y evidencias del trabajo: 15%
+Presentación y defensa del trabajo: 20%
+
+
+Importante: cada grupo tendrá un máximo de 15 minutos para presentar, con el objetivo de alcanzar a disertar los 5 grupos programados por día. Además, el orden indicado en el calendario corresponde también al orden de presentación de cada jornada.
