@@ -1,57 +1,87 @@
-# Superstore Sales Analysis
+# Análisis de Ventas y Rentabilidad - Superstore Sales
 
-Este proyecto analiza datos de ventas de una tienda Superstore con el objetivo de identificar patrones de ventas y rentabilidad por categorías, regiones y segmentos de clientes.
+Proyecto de la **Evaluación Parcial 3** de Programación para la Ciencia de Datos. Análisis exploratorio de datos de ventas con visualizaciones interactivas y dashboard web.
 
 ## Objetivo
 
-Analizar qué categorías, subcategorías, regiones y segmentos de clientes están asociados a mejores o peores resultados comerciales, utilizando visualizaciones interactivas para comunicar los hallazgos.
+Analizar qué categorías, subcategorías, regiones y segmentos de clientes están asociados a mejores o peores resultados comerciales, utilizando el dataset Superstore Sales (9,800 registros, periodo 2015-2018).
 
 ## Herramientas utilizadas
 
-- Python
-- Pandas
-- Plotly (visualizaciones interactivas)
-- Jupyter Notebook
-- Git y GitHub
+| Herramienta | Uso |
+|-------------|-----|
+| Python 3.x | Lenguaje principal |
+| Pandas | Manejo y limpieza de datos |
+| Plotly | Visualizaciones interactivas |
+| Dash | Dashboard web interactivo |
+| Jupyter Notebook | Desarrollo del análisis |
+| python-pptx + Kaleido | Generación de presentación PPT |
+| Git / GitHub | Control de versiones |
 
-## Contenido del repositorio
+## Estructura del repositorio
 
-- `Superstore_Sales.csv`: dataset utilizado para el análisis.
-- `analisis_superstore.ipynb`: notebook principal con todo el desarrollo del análisis.
-- `requirements.txt`: librerías necesarias para ejecutar el proyecto.
+```
+├── analisis_superstore.ipynb      # Notebook con análisis completo y visualizaciones
+├── dashboard_superstore.py        # Dashboard interactivo con Dash
+├── generar_presentacion.py        # Script generador de la presentación PPT
+├── presentacion_superstore.pptx   # Presentación generada
+├── informe_EA3.md                 # Informe del proyecto
+├── Superstore_Sales.csv           # Dataset original
+├── requirements.txt               # Dependencias del proyecto
+├── readme.md                      # Este archivo
+└── img_ppt/                       # Imágenes de gráficos para la PPT
+```
 
 ## Cómo ejecutar
 
-1. Clonar el repositorio:
-   ```bash
-   git clone <url-del-repositorio>
-   ```
-2. Instalar dependencias:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Abrir el notebook:
-   ```bash
-   jupyter notebook analisis_superstore.ipynb
-   ```
+### 1. Instalar dependencias
+```bash
+pip install -r requirements.txt
+```
 
-## Principales análisis realizados
+### 2. Ejecutar el notebook (análisis completo)
+```bash
+jupyter notebook analisis_superstore.ipynb
+```
 
-- Limpieza básica de datos (nulos, duplicados).
-- Conversión de fechas a formato datetime.
-- Creación de variables derivadas (año, mes, días de envío).
-- Análisis temporal de ventas (evolución mensual).
-- Análisis de ventas por categoría y subcategoría.
-- Análisis por región y segmento de clientes.
-- Análisis de tiempos de envío por modo.
-- Top 10 estados por ventas.
-- Mini dashboard consolidado con indicadores clave.
+### 3. Ejecutar el dashboard interactivo
+```bash
+python dashboard_superstore.py
+```
+Abrir en el navegador: http://127.0.0.1:8050
 
-## Visualizaciones incluidas
+### 4. Generar la presentación PowerPoint
+```bash
+python generar_presentacion.py
+```
+Genera `presentacion_superstore.pptx` con 14 slides.
 
-- Gráfico de líneas: evolución mensual de ventas.
-- Gráfico de barras: ventas por categoría y subcategoría.
-- Gráfico de dispersión: relación órdenes vs venta promedio por región.
-- Gráfico de barras agrupadas: ventas por segmento y categoría.
-- Boxplot: distribución de días de envío.
-- Dashboard con subplots (pies y barras).
+## Análisis realizados
+
+- Limpieza de datos (nulos, duplicados, tipos de datos)
+- Creación de variables derivadas (año, mes, días de envío)
+- Traducción de campos categóricos al español
+- Evolución temporal de ventas (gráfico de líneas)
+- Ventas por categoría con animación anual (barras)
+- Ranking de subcategorías (barras horizontales)
+- Distribución por región (dona interactiva)
+- Segmentación de clientes (barras agrupadas)
+- Análisis logístico de tiempos de envío (boxplot)
+- Top 10 estados por facturación
+- Mini dashboard con KPIs y métricas clave
+
+## Dashboard (Dash)
+
+El dashboard incluye:
+- 6 KPIs con indicadores de tendencia (▲▼)
+- Filtro interactivo por región
+- 6 gráficos que se actualizan dinámicamente
+- Diseño responsive con paleta profesional
+
+## Principales hallazgos
+
+1. **Crecimiento sostenido** — Ventas con tendencia positiva interanual (+20.3% YoY)
+2. **Tecnología lidera** — $827K (36.6% del total), mayor potencial de crecimiento
+3. **Consumidor dominante** — 50.8% del mercado, pero Corporativo ofrece mayor estabilidad
+4. **Concentración geográfica** — Oeste + Este = 61% de ingresos
+5. **Oportunidad logística** — Clase estándar con variabilidad en tiempos de entrega

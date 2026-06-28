@@ -2,3 +2,6 @@ pandas
 plotly
 openpyxl
 notebook
+dash
+python-pptx
+kaleido
